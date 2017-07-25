@@ -10,7 +10,7 @@ ___
 ###	1.	What have you learned recently about iOS development? How did you learn it? Has it changed your approach to building apps?
 
 >I recently learned about segmented controls to sort data for the user.  
-I also learned to use NSFetchedResultsController with a  UISearchBar and a predicate to filter results for display in a UIView.  Thinking of ways to sort and organize information can make an iOS app shine.  I also learned about using IBDesignables to override basic storyboard types to make come tasks easier.  For examples, you can create a custom class that inherits from UIView and then add some inspectable properties so that they show up in the storyboard.  This can make some tasks easier.  Here is an example on UIView border properties:
+I also learned to use NSFetchedResultsController with a  UISearchBar and a predicate to filter results for display in a UIView.  Thinking of ways to sort and organize information can make an iOS app shine.  I also learned about using IBDesignables from watching youtube tutorials to override basic storyboard types to make come tasks easier.  For examples, you can create a custom class that inherits from UIView and then add some inspectable properties so that they show up in the storyboard.  This can make some tasks easier.  Here is an example on UIView border properties:
 
 ```
 @IBInspectable var cornerRadius: CGFloat = 0 {
@@ -30,6 +30,8 @@ I also learned to use NSFetchedResultsController with a  UISearchBar and a predi
    }
 }
 ```
+
+This changes how I write apps because you can quickly include custom designable files into your project to make tasks quicker and easier.  This is the kind of approach that I think would work well for you company, esri.  In addition to loving GIS, I am also taking online Masters level courses in Data Analytics at Oregon State University.  This will help be to get and clean data on its way to becoming a better data model for apps at esri.
 
 ###	2.	Can you talk about a framework that you've used recently (Apple or third-party)? What did you like/dislike about the framework?
 
@@ -72,4 +74,4 @@ I would break up this ViewController into a Core Data model to handle the high-l
 
 ### 7.	If you were to start your iOS developer position today, what would be your goals a year from now?
 
-> I would want to spend a year building with the basics in MVC architecture (e.g. UITableViews, UICollectionViews, Core Data, MKMapKit, OAuth, RESTful APIs, etc.).  Then I would want to hone my skills at UI with UIView.animate.  Customizing the UI is optimizing the UI in my opinion.  Getting the right information and view to the user’s fingertips is iOS development.  I am also excited about utilizing @IBDesignable/Inspectables.  I just watched WWDC17 section on the new coreML and am excited to explore ways to improve the user experience by anticipating some of the workflow tasks (e.g. uses autocomplete to sync up with topic at hand).
+> I would want to spend a year building with the basics in MVC architecture (e.g. UITableViews, UICollectionViews, Core Data, MKMapKit, OAuth, RESTful APIs, etc.).  Then I would want to hone my skills at UI with UIView.animate.  Customizing the UI is optimizing the UI in my opinion.  Getting the right information and view to the user’s fingertips is iOS development.  I am also excited about utilizing @IBDesignable/Inspectables.  I just watched WWDC17 section on the new coreML and am excited to explore ways to improve the user experience by anticipating some of the workflow tasks (e.g. uses autocomplete to sync up with topic at hand).  CoreML could also help at esri to customize the map experience for your users thereby making their user experience smoother and more pleasant.
