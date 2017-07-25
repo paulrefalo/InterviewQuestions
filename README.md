@@ -2,7 +2,7 @@
 Mock interview questions as part of Udacity's iOS nanodegree program
 
 # Udacity Mock Interview Questions 
-#### Paul ReFalo 21 July 2017
+#### Paul ReFalo 25 July 2017
 
 ___
 
@@ -10,7 +10,26 @@ ___
 ###	1.	What have you learned recently about iOS development? How did you learn it? Has it changed your approach to building apps?
 
 >I recently learned about segmented controls to sort data for the user.  
-I also learned to use NSFetchedResultsController with a  UISearchBar and a predicate to filter results for display in a UIView.  Thinking of ways to sort and organize information can make an iOS app shine.
+I also learned to use NSFetchedResultsController with a  UISearchBar and a predicate to filter results for display in a UIView.  Thinking of ways to sort and organize information can make an iOS app shine.  I also learned about using IBDesignables to override basic storyboard types to make come tasks easier.  For examples, you can create a custom class that inherits from UIView and then add some inspectable properties so that they show up in the storyboard.  This can make some tasks easier.  Here is an example on UIView border properties:
+
+```
+@IBInspectable var cornerRadius: CGFloat = 0 {
+   didSet {
+       layer.cornerRadius = cornerRadius
+       layer.masksToBounds = cornerRadius > 0
+   }
+}
+@IBInspectable var borderWidth: CGFloat = 0 {
+   didSet {
+       layer.borderWidth = borderWidth
+   }
+}
+@IBInspectable var borderColor: UIColor? {
+   didSet {
+       layer.borderColor = borderColor?.CGColor
+   }
+}
+```
 
 ###	2.	Can you talk about a framework that you've used recently (Apple or third-party)? What did you like/dislike about the framework?
 
