@@ -34,6 +34,17 @@ I also learned to use NSFetchedResultsController with a  UISearchBar and a predi
 
 >No, UserDefaults is not the best place for a one-to-many relationship as needed here.  Instead use Core Data and the other ViewControllers can access data as managed objects as they need it.
 
+Another approach would be to override prepareForSegue and pass an object like this on segue:
+
+```
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "segueID" {
+        if let destination = segue.destinationViewController as? SecondController {
+            destination.structActorObject = self.structActorObject
+        }
+    }
+}
+```
 
 #### 6.	Imagine that you have been given a project that has this GithubProjectViewController. The GithubProjectViewController should be used to display high-level information about a GitHub project. However, it’s also responsible for finding out if there’s network connectivity, connecting to GitHub, parsing the responses and persisting information to disk. It is also one of the biggest classes in the project. Follow-up question:: How might you improve the design of this view controller?
 
