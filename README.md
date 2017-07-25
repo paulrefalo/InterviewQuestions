@@ -32,7 +32,7 @@ I also learned to use NSFetchedResultsController with a  UISearchBar and a predi
 
 ### 5.	Imagine that you have been given a project that has this ActorViewController. The ActorViewController should be used to display information about an actor. However, to send information to other ViewControllers, it uses NSUserDefaults. Does this make sense to you? How would you send information from one ViewController to another one?
 
->No, UserDefaults is not the best place for a one-to-many relationship as needed here.  Instead use Core Data and the other ViewControllers can access data as managed objects as they need it.
+>No, UserDefaults is not the best place for a one-to-many relationship as needed here.  UserDefaults is best for simple key-dictionary relationships and not a good substitue for an Actor class or struct.  With UserDefaults you can write basic types such as Bool, Float, Double, Int, String, or URL.  Also, you could use Core Data and the other ViewControllers can access data as managed objects as they need it.
 
 Another approach would be to override prepareForSegue and pass an object like this on segue:
 
